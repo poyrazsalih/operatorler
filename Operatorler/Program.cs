@@ -71,18 +71,68 @@ namespace Operatorler
 
             #region Karşılaştırma Operatörleri
 
-            //Karşılaştırma operatörleri, her zaman bool veri döndürür
-            //Büyüktür >
-            //Küçüktür <
-            //Eşittir ==
-            int sayi = 22;
+            //Karşılaştırma operatörleri, *HER ZAMAN* bool veri döndürür
+            //Büyüktür     >
+            //Küçüktür     <
+            //Eşittir      ==
+            //BüyükEşit    >=
+            //KüçükEşit    <=
+            //EşitDeğil    !=
+            //Değil(Tersi) !  (boolean verinin tersini yazar. true'yu false, false'ı true olarak yazar.)
 
+            //int sayi = 22;
+
+            //Console.Write("Sayı 10'dan büyük mü = ");
+            //Console.WriteLine(sayi > 10);
+            //Console.Write("Sayı 10'dan küçük mü = ");
+            //Console.WriteLine(sayi < 10);
+            //Console.Write("Sayı 10'a eşit mi = ");
+            //Console.WriteLine(sayi == 10);
+            //Console.Write("Sayı 10'dan büyük eşit mi = ");
+            //Console.WriteLine(sayi >= 10);
+            //Console.Write("Sayı 10'dan küçük eşit mi = ");
+            //Console.WriteLine(sayi <= 10);
+            //Console.Write("Sayı 10'a eşit değil mi = ");
+            //Console.WriteLine(sayi != 10);//Eşit değilse True getirir, eşitse False
+
+            //Console.WriteLine(!true);
+            //Console.Write("Sayı 10'dan büyük değil mi = ");
+            //Console.WriteLine(!(sayi > 10));
+            //Ünlem her zaman başa yazılır
+
+            #endregion
+
+            #region Mantıksal Operatörler
+
+            //Mantıksal Operatörler ve veya komutlarına ihtiyaç duyduğumuzda kullanılır
+            //Genellikle karşılaştırma operatörleri ile birlikte kullanılır
+            //Bool veri türleri ile koşulları çoğaltmak veya aynı koşula birden çok değişken eklemek için tercih edilir.
+            //Mantıksal Operatörlerin sağında ve solunda boolean veri olmalıdır.
+
+            //&& ve anlamında kullanılan mantıksal operatördür.
+            //true && true = true
+            //false && true = false
+            //true && false = false
+            //false && false = false
+
+            // || veya anlamında kullanılan mantıksal operatördür. (Alt Gr + küçüktür/büyüktür)
+            //true || true = true
+            //true || false = true
+            //false || true = true
+            //false || false = false
+
+            int sayi = 15;
+
+            //Sayı değişkeni içindeki veri 10 ile 20 arasında mı?
+            Console.Write("Sayı = ");
+            Console.WriteLine(sayi);
             Console.Write("Sayı 10'dan büyük mü = ");
             Console.WriteLine(sayi > 10);
-            Console.Write("Sayı 10'dan küçük mü = ");
-            Console.WriteLine(sayi < 10);
-            Console.Write("Sayı 10'a eşit mi = ");
-            Console.WriteLine(sayi == 10);
+            Console.Write("Sayı 20'den küçük mü = ");
+            Console.WriteLine(sayi < 20);
+
+            Console.Write("Sayı 10 ile 20 arasında mı ? = ");
+            Console.WriteLine(sayi > 10 && sayi < 20);
 
             #endregion
         }
